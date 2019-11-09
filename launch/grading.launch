@@ -1,0 +1,3 @@
+<launch> 
+<node name= "lab3" pkg= "lab3_package" type= "lab3_package" output= "screen"/> 
+</launch> 
