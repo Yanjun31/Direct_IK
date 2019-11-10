@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(lab3_package)
+project(lab6_package)
 
 add_compile_options(-std=c++11)
 
@@ -9,22 +9,20 @@ add_compile_options(-std=c++11)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
-  moveit_core
-  moveit_kinematics
-  moveit_ros_move_group
-  moveit_ros_planning
-  moveit_ros_planning_interface
   osrf_gear
   roscpp
   std_msgs
+  std_srvs
   tf_conversions
+  ur_kinematics
+  sensor_msgs
+  trajectory_msgs
+  actionlib
+  control_msgs
 )
-
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
-
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -143,7 +141,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/lab3_package_node.cpp)
-add_executable(lab3_package src/lab3_package.cpp)
+add_executable(lab6_package src/lab6_package.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -159,7 +157,10 @@ add_executable(lab3_package src/lab3_package.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(lab3_package ${catkin_LIBRARIES})
+target_link_libraries(lab6_package
+  ${catkin_LIBRARIES}
+  ur10_kin
+)
 
 #############
 ## Install ##

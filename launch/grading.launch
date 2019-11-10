@@ -1,3 +1,3 @@
 <launch> 
-<node name= "lab3" pkg= "lab3_package" type= "lab3_package" output= "screen"/> 
+<node name= "lab6" pkg= "lab6_package" type= "lab6_package" output= "screen"/> 
 </launch> 

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>lab3_package</name>
+  <name>lab6_package</name>
   <version>0.0.0</version>
-  <description>The lab3_package package</description>
+  <description>The lab6_package package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="yxl2259@todo.todo">yxl2259</maintainer>
+  <maintainer email="yxl2259@seu.edu">yxl2259</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -48,41 +48,43 @@
   <!--   <test_depend>gtest</test_depend> -->
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
+
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>geometry_msgs</build_depend>
-  <build_depend>moveit_core</build_depend>
-  <build_depend>moveit_kinematics</build_depend>
-  <build_depend>moveit_ros_move_group</build_depend>
-  <build_depend>moveit_ros_planning</build_depend>
-  <build_depend>moveit_ros_planning_interface</build_depend>
   <build_depend>osrf_gear</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>std_srvs</build_depend>
   <build_depend>tf_conversions</build_depend>
+  <build_depend>ur_kinematics</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>trajectory_msgs</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>control_msgs</build_depend>
+
   <build_export_depend>geometry_msgs</build_export_depend>
-  <build_export_depend>moveit_core</build_export_depend>
-  <build_export_depend>moveit_kinematics</build_export_depend>
-  <build_export_depend>moveit_ros_move_group</build_export_depend>
-  <build_export_depend>moveit_ros_planning</build_export_depend>
-  <build_export_depend>moveit_ros_planning_interface</build_export_depend>
   <build_export_depend>osrf_gear</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
   <build_export_depend>std_srvs</build_export_depend>
   <build_export_depend>tf_conversions</build_export_depend>
-  <exec_depend>geometry_msgs</exec_depend>
-  <exec_depend>moveit_core</exec_depend>
-  <exec_depend>moveit_kinematics</exec_depend>
-  <exec_depend>moveit_ros_move_group</exec_depend>
-  <exec_depend>moveit_ros_planning</exec_depend>
-  <exec_depend>moveit_ros_planning_interface</exec_depend>
+  <build_export_depend>ur_kinematics</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>trajectory_msgs</build_export_depend>
+  <build_export_depend>actionlib</build_export_depend>
+  <build_export_depend>control_msgs</build_export_depend>
+
+  <exec_depend>geometry_msgs</exec_depend> 
   <exec_depend>osrf_gear</exec_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>std_srvs</exec_depend>
   <exec_depend>tf_conversions</exec_depend>
-
+  <exec_depend>ur_kinematics</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>control_msgs</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
